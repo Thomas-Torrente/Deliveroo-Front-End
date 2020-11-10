@@ -10,6 +10,7 @@ function App() {
 
   const [isLoading, setIsLoading] = useState(true);
   const [panier, setPanier] = useState(false);
+  const [inPanier, setInPanier] = useState("");
   const fetchData = async () => {
     const response = await axios.get(
       "https://deliveroo-back-thomas.herokuapp.com/"
@@ -27,8 +28,14 @@ function App() {
     <>
       <div className="contenair">
         <Header data={data} />
-        <Menu data={data} />
-        <Panier data={data} setPanier={setPanier} />
+        <Menu data={data} setPanier={setPanier} setInPanier={setInPanier} />
+        <Panier
+          data={data}
+          setPanier={setPanier}
+          panier={panier}
+          inPanier={inPanier}
+          setInPanier={setInPanier}
+        />
       </div>
     </>
   );

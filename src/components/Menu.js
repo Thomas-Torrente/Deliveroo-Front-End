@@ -1,6 +1,7 @@
 import React from "react";
 
-const Menu = ({ data, setPanier }) => {
+const Menu = ({ data, setPanier, setInPanier }) => {
+  console.log(setPanier);
   return (
     <>
       <div className="allMenu">
