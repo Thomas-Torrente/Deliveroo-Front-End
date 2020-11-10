@@ -1,1 +1,93 @@
-/* Other rules */
+body {
+  background-color: #f2f5f5;
+}
+
+.contenair {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.top,
+.infoBigBox {
+  background-color: white;
+}
+.top {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top img {
+  max-height: 50px;
+  max-width: 160px;
+}
+.infoBigBox {
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.infoBigBox .infoImg {
+  width: 350px;
+  display: flex;
+  border-radius: 5px;
+  background: #f3f5f5;
+  align-items: flex-end;
+}
+
+/* .inCardMenu {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  height: 200px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.inCardMenu img {
+  max-width: 130px;
+  max-height: 130px;
+}
+
+.productDescription > h2,
+div {
+  font-size: 0.9rem;
+  color: #808484;
+}
+
+.cardMenu {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
+.cardMenu {
+  display: flex;
+}
+
+.itemCardMenu {
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.cardMenu img {
+  max-width: 20%;
+}
+/* PANIER */
+
+.panierValid {
+  display: block;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 1rem;
+  background: #00cdbd;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
