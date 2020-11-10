@@ -1,7 +1,6 @@
 import React from "react";
 
-const Menu = ({ data, setPanier, setInPanier }) => {
-  console.log(setPanier);
+const Menu = ({ data, setPanier, setInPanier, inPanier }) => {
   return (
     <>
       <div className="allMenu">
@@ -21,6 +20,17 @@ const Menu = ({ data, setPanier, setInPanier }) => {
                           className="itemCardMenu"
                           onClick={() => {
                             setPanier(true);
+                            // au click cela passe en true et change le css
+
+                            const newAddInPannier = [...inPanier];
+                            // on créer une const qui est une copie de setInPanier
+                            newAddInPannier.push({
+                              // on ajoute au tableau le titre et le prix
+                              title: meal.title,
+                              price: meal.price,
+                            });
+                            setInPanier(newAddInPannier);
+                            // on affiche la nouvelle valeur
                           }}
                         >
                           <img src={meal.picture} alt="" />

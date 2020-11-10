@@ -1,6 +1,6 @@
 import React from "react";
 
-const Panier = ({ data, setPanier, panier }) => {
+const Panier = ({ data, setPanier, panier, setInPanier }) => {
   const delivery = 2.5;
   let subTotal = 0;
   //   subTotal = itemsPrice; itemsprice doit etre le prix total de tous les trucs ajouter sans la tva
@@ -13,7 +13,7 @@ const Panier = ({ data, setPanier, panier }) => {
         <button className={panier ? "panierValid" : "panierNotValid"}>
           Valider mon panier
         </button>
-        <div></div>
+        <div>{setInPanier}</div>
       </div>
     </>
   );
