@@ -91,3 +91,9 @@ div {
   font-weight: 700;
   font-size: 1rem;
 }
+
+.panierNotValid {
+  cursor: not-allowed;
+  background: #bac3c3;
+  color: #8b9a9b;
+}

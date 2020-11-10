@@ -16,7 +16,12 @@ const Menu = ({ data, setPanier }) => {
                   return (
                     <>
                       <div className="cardMenu">
-                        <div className="itemCardMenu" onClick>
+                        <div
+                          className="itemCardMenu"
+                          onClick={() => {
+                            setPanier(true);
+                          }}
+                        >
                           <img src={meal.picture} alt="" />
 
                           <h3>{meal.title}</h3>
